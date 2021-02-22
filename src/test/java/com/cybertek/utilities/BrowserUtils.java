@@ -8,9 +8,7 @@ import java.util.List;
 
 public class BrowserUtils {
 
-    /*
 
-     */
     public static List<String> getElementsText(List<WebElement> webElementList) {
 
         //Placeholder empty list of web elements
