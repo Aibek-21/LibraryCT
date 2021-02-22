@@ -28,6 +28,7 @@ public class LoginPage {
         emailAddressBox.sendKeys(userName);
         passwordBox.sendKeys(password);
         signButton.click();
+
     }
 
 }

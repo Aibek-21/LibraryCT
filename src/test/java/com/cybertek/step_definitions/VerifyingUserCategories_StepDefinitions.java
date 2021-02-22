@@ -29,6 +29,7 @@ public class VerifyingUserCategories_StepDefinitions {
         String url = ConfigurationReader.getProperty("libraryUrl");
         Driver.getDriver().get(url);
         loginPage.loginToLibraryCT();
+
 //2nd way
 //        loginPage.emailAddressBox.sendKeys("librarian18@library");
 //        loginPage.passwordBox.sendKeys("rKG2sP88");
