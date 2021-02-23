@@ -16,6 +16,7 @@ public class UsersPage {
     @FindBy(id="user_groups")
     public WebElement usersDropdown;
 
+
     @FindBy(tagName = "th")
     public List<WebElement> columns;
 
