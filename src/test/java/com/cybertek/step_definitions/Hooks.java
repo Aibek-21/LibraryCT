@@ -1,6 +1,7 @@
 package com.cybertek.step_definitions;
 
 import com.cybertek.utilities.BrowserUtils;
+import com.cybertek.utilities.ConfigurationReader;
 import com.cybertek.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -17,10 +18,9 @@ public class Hooks {
     }
 
 
-    @BeforeStep
-    public void runBeforeSteps() {
-        BrowserUtils.sleep(3);
-
+    @Before
+    public void seTupScenario() {
+        Driver.getDriver().get(ConfigurationReader.getProperty("libraryUrl"));
     }
 
 

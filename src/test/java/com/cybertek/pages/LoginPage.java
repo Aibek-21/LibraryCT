@@ -30,5 +30,12 @@ public class LoginPage {
         signButton.click();
 
     }
+    public HomePage doLogin(String username,String password){
+        emailAddressBox.sendKeys(username);
+        passwordBox.sendKeys(password);
+        signButton.click();
+
+        return new HomePage();
+    }
 
 }
