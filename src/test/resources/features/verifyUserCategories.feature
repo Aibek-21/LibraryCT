@@ -1,7 +1,7 @@
 Feature: Users category feature
 
 
-@wip
+
   Scenario: Verify Users categories
     Given User (librarian) on the home page
     When User click users module
