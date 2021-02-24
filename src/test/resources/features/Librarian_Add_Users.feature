@@ -9,7 +9,7 @@ And user enter Start Date "<startDate>"
 And user enter Email "<email>"
 And user enter Status "<status>"
 And user enter End Date "<endDate>"
-Then user click save changes
+Then  And check user should be displayed by "<fullName>"
 Examples:
 | fullName  | password | userGroup | startDate  | email                | status   | endDate    |
 | John Doe  | pass123  | Librarian | 2021-02-21 | email123@hotmail.com | ACTIVE   | 2021-03-21 |
