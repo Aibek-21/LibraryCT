@@ -1,6 +1,7 @@
 package com.cybertek.pages;
 
 import com.cybertek.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -15,6 +16,7 @@ public class UsersPage {
 
     @FindBy(id="user_groups")
     public WebElement usersDropdown;
+
 
     @FindBy(xpath = "//a[@class='btn btn-lg btn-outline btn-primary btn-sm']")
     public WebElement addUser;
@@ -42,6 +44,9 @@ public class UsersPage {
     @FindBy(tagName = "th")
     public List<WebElement> columns;
 
+    public boolean isDisplayed(String name) {
+        return Driver.getDriver().findElement(By.xpath("//td[.='"+name+"']")).isDisplayed();
 
+    }
 
 }

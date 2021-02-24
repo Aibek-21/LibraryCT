@@ -3,9 +3,11 @@ package com.cybertek.step_definitions;
 import com.cybertek.pages.HomePage;
 import com.cybertek.pages.LoginPage;
 import com.cybertek.pages.UsersPage;
+import com.cybertek.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 
 public class AddUsers_StepDefinitions {
@@ -67,5 +69,9 @@ public class AddUsers_StepDefinitions {
 
     }
 
-
+    @Then("And check user should be displayed by {string}")
+    public void andCheckUserShouldBeDisplayedBy(String firstName) {
+        BrowserUtils.sleep(5);
+        Assert.assertTrue(usersPage.isDisplayed(firstName));
+    }
 }
