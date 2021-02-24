@@ -44,6 +44,7 @@ public class AddUsers_StepDefinitions {
 
     @When("user enter Start Date {string}")
     public void user_enter_start_date(String startDate) {
+        usersPage.startDate.clear();
         usersPage.startDate.sendKeys(startDate);
     }
 
@@ -60,6 +61,7 @@ public class AddUsers_StepDefinitions {
 
     @When("user enter End Date {string}")
     public void user_enter_end_date(String endDate) {
+        usersPage.endDate.clear();
         usersPage.endDate.sendKeys(endDate);
     }
 
