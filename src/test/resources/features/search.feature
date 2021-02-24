@@ -1,5 +1,4 @@
-Feature:
-  As a student, I should be able to search for books within different categories
+Feature: As a student, I should be able to search for books within different categories
 
 
   Scenario:
