@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //this plugin allows to create report in HTML format and create in in target folder and name it cucumber-report.html
+
         plugin = {"html:target/cucumber-report.html",
           "json:target/cucumber.json",
                 "rerun:target/rerun.txt"
@@ -14,9 +14,13 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cybertek/step_definitions",
         dryRun = false,
-        tags = "@wip"
+        tags = "@TC-6"
 )
+
+public class CukesRunner {}
+
 
 public class CukesRunner {
 
 }
+
