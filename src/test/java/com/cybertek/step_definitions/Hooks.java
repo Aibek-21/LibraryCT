@@ -14,7 +14,7 @@ public class Hooks {
     @After()
     public void tearDown() {
         BrowserUtils.sleep(3);
-        Driver.getDriver().close();
+       Driver.closeDriver();
     }
 
 
