@@ -14,4 +14,9 @@ public class HomePage {
     @FindBy(xpath = "//span[.='Users']")
     public WebElement usersModuleLink;
 
+
+    @FindBy(xpath = "//span[.='Books']")
+    public WebElement BooksModule;
+
+
 }
