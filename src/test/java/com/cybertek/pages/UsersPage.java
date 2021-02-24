@@ -1,6 +1,7 @@
 package com.cybertek.pages;
 
 import com.cybertek.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -40,12 +41,12 @@ public class UsersPage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement saveChanges;
 
-
-
-
     @FindBy(tagName = "th")
     public List<WebElement> columns;
 
+    public boolean isDisplayed(String name) {
+        return Driver.getDriver().findElement(By.xpath("//td[.='"+name+"']")).isDisplayed();
 
+    }
 
 }
