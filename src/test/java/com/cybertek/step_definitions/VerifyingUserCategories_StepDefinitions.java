@@ -28,7 +28,7 @@ public class VerifyingUserCategories_StepDefinitions {
     public void userLibrarianOnTheHomePage() {
         String url = ConfigurationReader.getProperty("libraryUrl");
         Driver.getDriver().get(url);
-        loginPage.loginToLibraryCT();
+        loginPage.doLogin("student70@library", "FPEDLRY3");
 
 //2nd way
 //        loginPage.emailAddressBox.sendKeys("librarian18@library");
@@ -54,6 +54,9 @@ public class VerifyingUserCategories_StepDefinitions {
         List<String> listOfUsers = BrowserUtils.getElementsText(select.getOptions());
         Assert.assertTrue(expectedList.equals(listOfUsers));
     }
+
+
+
 
 
 }
