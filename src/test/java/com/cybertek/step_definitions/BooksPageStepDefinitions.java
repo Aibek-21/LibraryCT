@@ -23,7 +23,6 @@ public class BooksPageStepDefinitions {
         @Given("user is on landing page")
         public void user_is_on_landing_page() throws InterruptedException {
 
-            Driver.getDriver().get(ConfigurationReader.getProperty("LibraryUrl"));
             loginPage.loginLibrary();
             Thread.sleep(2000);
 

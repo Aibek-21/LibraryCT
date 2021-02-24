@@ -22,9 +22,9 @@ public class search_StepDef {
     public void user_is_on_the_homepage() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("qaUrl"));
-        loginPage.username.sendKeys(ConfigurationReader.getProperty("userSt"));
-        loginPage.password.sendKeys(ConfigurationReader.getProperty("passSt"));
-        loginPage.signInButton.click();
+        loginPage.emailAddressBox.sendKeys(ConfigurationReader.getProperty("userSt"));
+        loginPage.passwordBox.sendKeys(ConfigurationReader.getProperty("passSt"));
+        loginPage.signButton.click();
 
     }
 

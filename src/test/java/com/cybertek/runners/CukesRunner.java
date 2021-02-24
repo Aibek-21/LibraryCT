@@ -14,13 +14,13 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cybertek/step_definitions",
         dryRun = false,
-        tags = "@TC-6"
+        tags = "@librarian or @student"
 )
 
 public class CukesRunner {}
 
 
-public class CukesRunner {
 
-}
+
+
 
