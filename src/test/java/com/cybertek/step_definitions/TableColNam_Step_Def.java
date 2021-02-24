@@ -29,6 +29,7 @@ public class TableColNam_Step_Def {
         BrowserUtils.sleep(2);
         Assert.assertTrue(tableColumnName.equals(tabColPage.tableColNames()));
         System.out.println(tableColumnName);
+
     }
 
 
