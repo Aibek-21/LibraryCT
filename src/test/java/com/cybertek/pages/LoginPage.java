@@ -44,4 +44,11 @@ public class LoginPage {
         signButton.click();
     }
 
+    public void loginLibrary(){
+        emailAddressBox.sendKeys("librarian44@library");
+        passwordBox.sendKeys("4Lzovksn");
+
+        signButton.click();
+    }
+
 }
