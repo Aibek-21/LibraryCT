@@ -38,4 +38,10 @@ public class LoginPage {
         return new HomePage();
     }
 
+    public void loginPageAsStudent(){
+        emailAddressBox.sendKeys("student70@library");
+        passwordBox.sendKeys("FPEDLRY3");
+        signButton.click();
+    }
+
 }
