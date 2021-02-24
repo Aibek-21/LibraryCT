@@ -16,6 +16,7 @@ public class UsersPage {
     @FindBy(id="user_groups")
     public WebElement usersDropdown;
 
+
     @FindBy(xpath = "//a[@class='btn btn-lg btn-outline btn-primary btn-sm']")
     public WebElement addUser;
     @FindBy(xpath = "//input[@name='full_name']")
@@ -44,6 +45,7 @@ public class UsersPage {
 
     @FindBy(tagName = "th")
     public List<WebElement> columns;
+
 
 
 }
