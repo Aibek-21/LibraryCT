@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class UsersPage {
 
     public UsersPage() {
@@ -37,6 +39,11 @@ public class UsersPage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement saveChanges;
 
+
+
+
+    @FindBy(tagName = "th")
+    public List<WebElement> columns;
 
 
 }
