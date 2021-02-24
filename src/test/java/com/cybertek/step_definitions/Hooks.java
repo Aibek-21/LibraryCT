@@ -11,10 +11,10 @@ import io.cucumber.java.BeforeStep;
 public class Hooks {
 
 
-    @After()
+    @After
     public void tearDown() {
         BrowserUtils.sleep(3);
-        Driver.getDriver().close();
+        Driver.closeDriver();
     }
 
 
