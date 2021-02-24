@@ -21,7 +21,6 @@ public class search_StepDef {
     @Given("user is on the homepage")
     public void user_is_on_the_homepage() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("qaUrl"));
         loginPage.emailAddressBox.sendKeys(ConfigurationReader.getProperty("userSt"));
         loginPage.passwordBox.sendKeys(ConfigurationReader.getProperty("passSt"));
         loginPage.signButton.click();

@@ -16,8 +16,7 @@ public class Hooks {
             byte [] img = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(img, "img/png", scenario.getName());
         }
-        Driver.getDriver().close();
-     
+        Driver.closeDriver();
 
     }
 

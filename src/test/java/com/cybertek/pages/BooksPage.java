@@ -26,7 +26,7 @@ public class BooksPage {
         return categoriesList;
     }
 
-    public WebElement categoryNames(){
+    public WebElement categoryNames() {
         Select select = new Select(bookCategories);
         WebElement categoriesNames = select.getWrappedElement();
         return categoriesNames;
