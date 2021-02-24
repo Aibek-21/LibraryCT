@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         plugin = {"html:target/cucumber-report.html",
-          "json:target/cucumber.json",
+                "json:target/cucumber.json",
                 "rerun:target/rerun.txt"
         },
         features = "src/test/resources/features",
@@ -16,11 +16,6 @@ import org.junit.runner.RunWith;
         dryRun = false,
         tags = ""
 )
+public class ParallelTesting {
 
-public class CukesRunner {}
-
-
-
-
-
-
+}
