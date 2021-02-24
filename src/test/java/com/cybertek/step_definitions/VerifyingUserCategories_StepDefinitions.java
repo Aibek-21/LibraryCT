@@ -26,9 +26,8 @@ public class VerifyingUserCategories_StepDefinitions {
 
     @Given("User \\(librarian) on the home page")
     public void userLibrarianOnTheHomePage() {
-        String url = ConfigurationReader.getProperty("libraryUrl");
-        Driver.getDriver().get(url);
-        loginPage.doLogin("student70@library", "FPEDLRY3");
+
+        loginPage.doLogin("librarian18@library", "rKG2sP88");
 
 //2nd way
 //        loginPage.emailAddressBox.sendKeys("librarian18@library");
@@ -52,7 +51,9 @@ public class VerifyingUserCategories_StepDefinitions {
     public void user_should_see_following_options(List<String> expectedList) {
         Select select = new Select(usersPage.usersDropdown);
         List<String> listOfUsers = BrowserUtils.getElementsText(select.getOptions());
-        Assert.assertTrue(expectedList.equals(listOfUsers));
+        Assert.assertEquals(expectedList,(listOfUsers));
+        System.out.println(expectedList);
+        System.out.println(listOfUsers);
     }
 
 
