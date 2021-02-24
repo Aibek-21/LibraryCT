@@ -17,10 +17,6 @@ public class Library_StepDefinition {
 
     @Given("the student on the home page")
     public void the_student_on_the_home_page() {
-
-        String url = ConfigurationReader.getProperty("url");
-        Driver.getDriver().get(url);
-
         libraryMainPage.loginLibrary();
 
     }

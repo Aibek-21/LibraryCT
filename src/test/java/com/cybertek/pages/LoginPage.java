@@ -12,7 +12,9 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
 
-    public LoginPage() {
+
+    public LoginPage(){
+
 
         PageFactory.initElements(Driver.getDriver(), this);
     }
@@ -58,7 +60,7 @@ public class LoginPage {
 
 
 
-}
+
 
     public void loginPageAsStudent() {
         emailAddressBox.sendKeys("student70@library");
