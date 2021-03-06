@@ -1,7 +1,7 @@
 Feature: As a student, I should be able to search for books within different categories
 
 
-  Scenario:
+  Scenario: Verify all book categories
     Given user is on the homepage
     Then user sees all categories
 

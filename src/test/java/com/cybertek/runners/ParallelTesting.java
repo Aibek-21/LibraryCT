@@ -10,9 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber-report.html",
                 "json:target/cucumber.json",
                 "rerun:target/rerun.txt",
-                "pretty",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-                "timeline:test-output-thread/"
+                "pretty"
         },
         features = "src/test/resources/features",
         glue = "com/cybertek/step_definitions",
