@@ -14,5 +14,5 @@ Feature: Librarian add users
 
     Examples:
       | fullName  | password | userGroup | startDate  | email                 | status   | endDate    |
-      | John Doe  | pass123  | Librarian | 2021-02-21 | email1234@hotmail.com | ACTIVE   | 2021-03-21 |
-      | Alex User | abc456   | Students  | 2021-02-21 | alex1235@hotmail.com  | INACTIVE | 2021-03-21 |
+      | Eric Alex  | pass123  | Librarian | 2021-02-21 | email456_l123458@hotmail.com | ACTIVE   | 2021-03-21 |
+      | Paulo User | abc456   | Students  | 2021-02-21 | alex487_x123568@hotmail.com  | INACTIVE | 2021-03-21 |
