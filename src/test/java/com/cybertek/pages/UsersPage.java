@@ -46,7 +46,6 @@ public class UsersPage {
 
     public boolean isDisplayed(String name) {
         return Driver.getDriver().findElement(By.xpath("//td[.='"+name+"']")).isDisplayed();
-
     }
 
 }
