@@ -73,7 +73,7 @@ public class AddUsers_StepDefinitions {
 
     @Then("And check user should be displayed by {string}")
     public void andCheckUserShouldBeDisplayedBy(String firstName) {
-        BrowserUtils.sleep(5);
+        BrowserUtils.sleep(3);
         Assert.assertTrue(usersPage.isDisplayed(firstName));
     }
 }
