@@ -4,18 +4,11 @@ import com.cybertek.pages.HomePage;
 import com.cybertek.pages.LoginPage;
 import com.cybertek.pages.UsersPage;
 import com.cybertek.utilities.BrowserUtils;
-import com.cybertek.utilities.ConfigurationReader;
-import com.cybertek.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.bytebuddy.pool.TypePool;
 import org.junit.Assert;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.sql.DriverManager;
 import java.util.List;
 
 public class VerifyingUserCategories_StepDefinitions {
