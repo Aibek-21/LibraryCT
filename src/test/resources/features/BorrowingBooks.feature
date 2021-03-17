@@ -2,7 +2,7 @@ Feature: As a user, I should able to see my borrowing books.
 
   Background:
   Given User should be locked in as a student
-
+@smoke
   Scenario: borrowing books table columns names
     Given the user on the homepage
     And the User click Borrowing Books module
