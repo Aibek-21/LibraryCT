@@ -4,7 +4,7 @@ Feature: As a user, I should be able to login to the library app
   Background: User is already in login page
     Given user is on the login page
 
-  @student
+@smoke
   Scenario: Login as student
     When user enters student username
     And user enters student password
